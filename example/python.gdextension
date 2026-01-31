@@ -1,0 +1,16 @@
+[configuration]
+
+entry_symbol = "initialize_pythonscript"
+compatibility_minimum="4.6.0"
+version = "4.5-alpha-15"
+[libraries]
+
+linux.debug.x86_64 = "libpythonscript.so"
+linux.release.x86_64 = "libpythonscript.so"
+linux.debug.arm64 = "libpythonscript.so"
+linux.release.arm64 = "libpythonscript.so"
+linux.debug.x86 = "libpythonscript.so"
+linux.release.x86 = "libpythonscript.so"
+
+macos.debug.arm64 = "libpythonscript.dylib"
+macos.release.arm64 = "libpythonscript.dylib"
