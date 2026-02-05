@@ -18,3 +18,11 @@ config/name="New Game Project"
 run/main_scene="uid://mgp02mkor0at"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/universal_loader/plugin.cfg")
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
