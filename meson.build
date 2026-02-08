@@ -12,6 +12,13 @@ pythonscript_lib = shared_library('pythonscript',
 
 main_lib = shared_library('main',
                           'src/main.cpp',
-                          include_directories: ['gdextension-api', 'example/py4godot/python/include/python3.11'],
+                          include_directories: ['gdextension-api','src', 'example/py4godot/python/include/python3.11'],
                           dependencies: python_lib,
                           name_prefix: 'lib')
+
+
+main_lib = shared_library('foo',
+                          'cython_example/foo.cpp',
+                          include_directories: ['gdextension-api','src', 'example/py4godot/python/include/python3.11'],
+                          dependencies: [python_lib],
+                          link_with: main_lib)
